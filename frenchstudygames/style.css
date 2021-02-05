@@ -1,0 +1,27 @@
+table, tr, td {
+  border: 2px double blue;
+}
+h1, h2, h3 {
+  color: rgb(160, 0, 255);
+}
+body {
+  background-color: aqua;
+}
+a:hover, button:hover, input:hover, select:hover {
+  background-color: lime;
+}
+button, input, select {
+  background-color: yellow;
+}
+a:active, button:active, input:active, select:active {
+  background-color: magenta;
+}
+a:active {
+  color: black;
+}
+ul.a {
+  list-style-type: disc;
+}
+ul.b {
+  list-style-type: square;
+}

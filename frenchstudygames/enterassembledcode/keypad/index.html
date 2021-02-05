@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enter your code!</title>
+  <link rel="shortcut icon" href="/images/franceMap.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <h1>Enter your code</h1>
+  <p>Here you can enter the code you have assembled from the games you've won!</p>
+  <div id="buttons"></div>
+  <br>
+  <!--Backspace button-->
+  <button onclick="enteredcode = enteredcode.slice(0, -1);document.getElementById('entered').innerHTML = enteredcode; document.getElementById('colorcodegiven').innerHTML = '';">Backspace</button>
+  <!--Clear button-->
+  <button onclick="enteredcode = '';document.getElementById('entered').innerHTML = enteredcode;document.getElementById('colorcodegiven').innerHTML = '';">Clear</button>
+  <!--Enter button-->
+  <button onclick=" if (enteredcode == '') {document.getElementById('entered').innerHTML = '';}if(enteredcode == code) {document.getElementById('colorcodegiven').innerHTML = 'Try: ' + colorcode.join(', '); enteredcode = '';} else {document.getElementById('colorcodegiven').innerHTML = 'Try: ' + [randcolor(), randcolor(), randcolor(), randcolor()].join(', '); enteredcode = '';enteredcode = '';}">Enter</button>
+  <div id="entered"></div>
+  <div id="colorcodegiven"></div>
+</body>
+</html>
+<script src="script.js"></script>
